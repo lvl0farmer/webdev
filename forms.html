@@ -11,16 +11,160 @@
 <input type="radio" name="">
 <input type="password" name="">
  -->
-<h1>Login</h1>
+<!-- <h1>Login</h1> -->
 <!-- action = where the data will go 
 	 if action is not define, then the page will just get refresh -->
 <!-- method = how data will be send 
 	 if method is not define, then the default method is get -->
 
-<form action="http://wikipedia.org">
+<!-- ================================================= -->
+<!-- <form action="http://wikipedia.org">
+	<label>Username: 
+		<input name="username" type="text" placeholder="username">
+	</label>
 	<input name="username" type="text" placeholder="username">
+
+	<label>Password: 
+		<input name="password" type="password" placeholder="password">
+	</label>
+
 	<input name="password" type="password" placeholder="password">
+
+	<input type="submit">
+</form> -->
+<!-- ================================================= -->
+
+<!-- <br>
+<br> -->
+
+<!-- <form action="http://wikipedia.org">
+	<label for="username">Username:</label>
+	<input id="username" name="user" type="text" placeholder="username">
+
+	<label for="password">Password:</label> 
+	<input id="password" name="pass" type="password" placeholder="password">
+
+	<input type="submit">
+</form>  -->
+
+
+<h1>Login Review</h1>
+
+<span>
+	<strong><em>
+	This is a form of input without accessiblity
+	</em></strong>
+</span>
+
+<form action="http://wikipedia.org" method="get">
+	<span>Username</span>
+	<input type="text" name="user">
+
+	<span>Password</span>
+	<input type="password" name="pass">
+
+	<button>submit</button>
+</form>
+
+<br>
+<br>
+
+<span>
+	<strong><em>
+	This is a form of input wrapped inside label and accessiblity friendly with input submit btn rather than button element
+	</em></strong>
+</span>
+
+<form action="http://wikipedia.org" method="get">
+	<label> 
+		Username:<input type="text" name="user">
+	</label>
+
+	<label> 
+		Password:<input type="password" name="pass">
+	</label>
+
 	<input type="submit">
 </form>
+
+<br>
+<br>
+
+<span>
+	<strong><em>
+	This is an alternative way of writing a form of inputs outside of labels element but connecting with for and id accessiblity friendly...I also added placeholder
+	</em></strong>
+</span>
+
+<form action="http://wikipedia.org" method="get">
+	<label for="username">Username:<label>
+	<input id="username" type="text" name="user" placeholder="Username">
+	
+	<label for="password">Password:<label>
+	<input id="password" type="password" name="pass" placeholder="Password">
+
+	<input type="submit">
+</form>
+
+<br>
+<br>
+<br>
+
+<span>
+	<strong><em>
+	This is exactly code above but with email input added and required attribute is added for basic html form validation
+	</em></strong>
+</span>
+
+<form action="http://wikipedia.org" method="get">
+	<label for="email">Email:<label>
+	<input id="email" type="email" name="email" placeholder="Email" required>
+
+	<label for="username">Username:<label>
+	<input id="username" type="text" name="user" placeholder="Username" required>
+	
+	<label for="password">Password:<label>
+	<input id="password" type="password" name="pass" placeholder="Password" required="">
+
+	<input type="submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
