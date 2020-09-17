@@ -1,0 +1,44 @@
+/*element*/
+li	{
+
+}
+
+/*class*/
+.hello{
+
+}
+
+/*id*/
+#name {
+
+}
+
+/*Star*/
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selectors*/
+li a {
+	color: red;
+}
+
+/*Adjacent Selector   */
+/*this just mean anything that is next to h4 or direct sibling of h4*/
+h4 + ul {
+	border: 4px solid red;
+}
+
+/*Attribute Selector*/
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+input[type="checkbox"]{
+	background: red;
+}
+
+/**nth of type*/
+ul:nth-of-type(3){
+	background: purple;
+}

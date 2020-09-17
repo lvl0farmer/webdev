@@ -1,0 +1,22 @@
+h1 {
+	color: #FF0000;
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+	border: 8px dashed purple;
+}
+
+li {
+	color: #00FF00;
+}
+
+h4 {
+	color: purple;
+}
+
+body {
+	background: rgb(0,0,255);
+	background: url(https://textures.world/wp-content/uploads/2018/10/Dark-Wood-Seamless-Background-Texture-1-copy.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

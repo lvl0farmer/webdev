@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specificity</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css">
+		/*everything will color red*/
+		body {color: red;} 
+
+		/*after this line, the p will change to  green*/
+		p{color: green;}
+
+		/*after this line everything inside ul will be color blue... 
+		as you can see li also took on color blue since ul is the parent*/
+		ul{color: blue;}
+		
+		/*li wins out the color*/
+		li{color: orange;}
+
+		.highlight {color: gray;}
+		#special {color: pink;}
+	</style>
+</head>
+<body>
+
+<p>Hello!</p>
+
+<ul>
+	<li id="special" class="highlight">John</li>
+	<li class="highlight">Paul</li>
+	<li>George</li>
+	<li>Ringo</li>
+</ul>
+</body>
+</html>

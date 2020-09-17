@@ -1,0 +1,15 @@
+body {
+	background: cyan;
+}
+
+li {
+	border: 1px solid red;
+}
+
+#third_li {
+	background: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
