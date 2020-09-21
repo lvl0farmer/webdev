@@ -11,7 +11,7 @@
 	<style type="text/css">
 		body {
 			font-family: Ranchers;
-			background: teal;
+			background: lightskyblue;
 			color: white;
 		}
 
@@ -24,14 +24,37 @@
 			border: 2px solid red;
 		}
 
+		.inside_grid_background {
+			background: royalblue;
+			border: 2px dashed white;
+		}
+		
 		.icon_hover:hover {
 			transform: scale(1.1);
+		}
+
+		.font-shadow {
+			text-shadow: 2px 2px black;
+		}
+
+		.invert_btn:hover {
+			filter: invert(1);
 		}
 
 		@media only screen and (max-width: 770px)
 		{
 			.icon_hover:hover {
-				transform: translate(10px);
+				transform: translate(20px);
+				background: dodgerblue;
+			}
+
+			#web_icon:hover{
+				transform: translate(0) !important;
+				transform: scale(1.1) !important;
+			}
+
+			.background_hover:hover {
+				background: dodgerblue;	
 			}
 		}
 
@@ -50,17 +73,17 @@
 				<span class="icon-bar"></span>
 		</button>
 
-		<a id="" href="#" class="navbar-brand icon_hover"><img style="max-height: 150%;" src="001-knight.png"></a>
+		<a id="web_icon" href="#" class="navbar-brand icon_hover"><img style="max-height: 150%;" src="001-knight.png"></a>
 	</div>
 
 	<div class="navbar-collapse collapse" id="nav_links_and_items">
 		<ul class="nav navbar-nav">
-			<li class="icon_hover"><a href="#">About</a></li>
-			<li class="icon_hover"><a href="#">Contact</a></li>
+			<li class="icon_hover background_hover"><a href="#">About</a></li>
+			<li class="icon_hover background_hover"><a href="#">Contact</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li class="icon_hover"><a href="#">Signup</a></li>
-			<li class="icon_hover"><a href="#">Register</a></li>
+			<li class="icon_hover background_hover"><a href="#">Signup</a></li>
+			<li class="icon_hover background_hover"><a href="#">Register</a></li>
 		</ul>
 	</div>
 
@@ -68,29 +91,29 @@
 
 <h1 class="text-center" style="text-shadow: 3px 3px black;">Dungeon of Zenith</h1>
 
-<div class="jumbotron" style="background: green;">
+<div class="jumbotron container" style="background: dodgerblue;">
 	<div class="container">
-		<button class="btn btn-primary font_border">warrior</button>
-		<button class="btn btn-default font_border">bowman</button>
-		<button class="btn btn-info font_border">healer</button>
-		<button class="btn btn-danger font_border">merchant</button>
-		<button class="btn btn-sucess font_border">thief</button>
-		<button class="btn btn-warning font_border">paladin</button>
-		<button class="btn btn-link font_border">priest</button>
+		<button class="btn btn-primary font_border invert_btn">warrior</button>
+		<button class="btn btn-default font_border invert_btn">bowman</button>
+		<button class="btn btn-info font_border invert_btn">healer</button>
+		<button class="btn btn-danger font_border invert_btn">merchant</button>
+		<button class="btn btn-sucess font_border invert_btn">thief</button>
+		<button class="btn btn-warning font_border invert_btn">paladin</button>
+		<button class="btn btn-link font_border invert_btn">priest</button>
 
 		<hr>
 </div>
 
-<div class="container">
+<div class="container font-shadow">
 	<div class="row">
-		<div class="col-md-4 col-sm-4 grid_background">colLG4</div>
+		<div class="col-md-4 col-sm-6 grid_background">colLG4</div>
 
-		<div class="col-md-4 col-sm-4 grid_background">colLG4</div>
+		<div class="col-md-4 col-sm-6 grid_background">colLG4</div>
 
 		<div class="col-md-4 col-sm-6 grid_background">
-			<div class="row">
-				<div class="col-lg-6 grid_background">col6</div>
-				<div class="col-lg-6 grid_background">col6</div>
+			<div class="row grid_background">
+				<div class="col-lg-6 inside_grid_background">col6</div>
+				<div class="col-lg-6 inside_grid_background">col6</div>
 			</div>
 			
 		</div>
