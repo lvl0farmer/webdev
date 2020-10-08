@@ -1,52 +1,115 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>EXAMPLE</title>
+    <style>
+        body{ background: silver;}
+        div.ex1 {
+        background-color: white;
+        width: 10vw;
+        height: 20vh;
 
-<head>
-<style>
-    input[type=radio] {
+        /* here is probably what you need */
+        overflow: auto;
+        }
+
+        input[type=radio], input[type=radio] + div {
         display: none;
-    }
+        }
 
-    input:checked + label {
-        display: inline-block;
-        border: 2px solid orangered;
-    }
+        input:checked + div{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
 
-    .center {
-        text-align: center;
-        margin: auto;
-        /* padding: 10px; */
-        /* width: 90%; */
-        width: 4vw;
-    }
+    <h2 style="padding: 10px; text-align: center;">overflow: scroll/auto:</h2>
+    <div style="display: flex;">
+        <div class="ex1">
+            <button><label for="1">Button1</label></button>
+            <button><label for="2">Button2</label></button>
+            <button><label for="3">Button3</label></button>
+            <button><label for="4">Button4</label></button>
+            <button><label for="5">Button5</label></button>
+            <button><label for="6">Button6</label></button>
+            <button><label for="7">Button7</label></button>
+            <button><label for="8">Button8</label></button>
+            <button><label for="9">Button9</label></button>
+            <button><label for="10">Button10</label></button>
+            <button><label for="11">Button11</label></button>
+            <button><label for="12">Button12</label></button>
+            <button><label for="13">Button13</label></button>
+            <button><label for="14">Button14</label></button>
+            <button><label for="15">Button15</label></button>
+        </div>
 
-</style>
-</head>
-<body>
-
-<h1>Display Radio Buttons</h1>
-
-<form action="" class="center">
-  <p>Please select your gender:</p>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
-
-  <br>
-  <br>  
-
-  <p>Please select your age:</p>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">0 - 30</label><br>
-  <input type="radio" id="age2" name="age" value="60">
-  <label for="age2">31 - 60</label><br>  
-  <input type="radio" id="age3" name="age" value="100">
-  <label for="age3">61 - 100</label><br><br>
-  <input type="submit" value="Submit">
-</form>
-
-</body>
+        <div style="text-align: center; margin: auto;">
+            <span>
+                <input type="radio" id="1" name="toggleDiv">
+                <div>This is div 1</div>
+            </span>
+            <span>
+                <input type="radio" id="2" name="toggleDiv">
+                <div>This is div 2</div>
+            </span>
+            <span>
+                <input type="radio" id="3" name="toggleDiv">
+                <div>This is div 3</div>
+            </span>
+            <span>
+                <input type="radio" id="4" name="toggleDiv">
+                <div>This is div 4</div>
+            </span>
+            <span>
+                <input type="radio" id="5" name="toggleDiv">
+                <div>This is div 5</div>
+            </span>
+            <span>
+                <input type="radio" id="6" name="toggleDiv">
+                <div>This is div 6</div>
+            </span>
+            <span>
+                <input type="radio" id="7" name="toggleDiv">
+                <div>This is div 7</div>
+            </span>
+            <span>
+                <input type="radio" id="8" name="toggleDiv">
+                <div>This is div 8</div>
+            </span>
+            <span>
+                <input type="radio" id="9" name="toggleDiv">
+                <div>This is div 9</div>
+            </span>
+            <span>
+                <input type="radio" id="10" name="toggleDiv">
+                <div>This is div 10</div>
+            </span>
+            <span>
+                <input type="radio" id="11" name="toggleDiv">
+                <div>This is div 11</div>
+            </span>
+            <span>
+                <input type="radio" id="12" name="toggleDiv">
+                <div>This is div 12</div>
+            </span>
+            <span>
+                <input type="radio" id="13" name="toggleDiv">
+                <div>This is div 13</div>
+            </span>
+            <span>
+                <input type="radio" id="14" name="toggleDiv">
+                <div>This is div 14</div>
+            </span>
+            <span>
+                <input type="radio" id="15" name="toggleDiv">
+                <div>This is div 15</div>
+            </span>        
+        </div>
+    </div>
+  </body>
 </html>
