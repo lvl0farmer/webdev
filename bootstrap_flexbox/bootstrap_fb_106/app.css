@@ -1,6 +1,14 @@
+html {
+    /* temporary fix for overflow content */
+    overflow-x: hidden;
+}
+
 body {
     background: #f5d9d5;
     font-family: "Nunito", san-serif;
+    /* width: 100%;
+    height: 100%;
+    margin: 0; */
 }
 
 .blurb h2 {
