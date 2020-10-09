@@ -1,26 +1,26 @@
-  .clientimenu::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 25px;
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-refill,minmax(350px,1fr)); */
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
   }
-  .clientimenu::-webkit-scrollbar-track {
-    background: linear-gradient(171deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-  }
-  .clientimenu::-webkit-scrollbar-thumb {
-    background: #4a71ff;
-    border-radius: 8px;
-    background-clip: padding-box;
-  }
-  .clientimenu::-webkit-scrollbar-thumb:hover {
-    background: #1447ff;
-  }
-
-  #content {
-      width: 150px;
-      height: 75px;
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
   }
 
-  #testo1 {
-    width: 150px;
-    height: 75px;
-    overflow: scroll;
-  }
+div p {
+    padding: 0;
+    margin: 0;
+}
+
+body , html { 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
