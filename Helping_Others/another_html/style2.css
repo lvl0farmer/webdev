@@ -1,0 +1,73 @@
+/* temporary css */
+html, body {
+    background: gray;
+    width: 100%;
+    height: 100%;
+    margin: 0; padding: 0;
+  }
+
+main{
+    display: grid;
+    grid: 1fr, 1fr / repeat(auto-fit, minmax(250px, 1fr));               
+    grid-gap: 1em;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    grid-template-areas: "type1 type1 type1 type1 type1"
+                         "happy excited laughing confident love";
+}
+
+/* putting content in place */
+#type1 {
+    grid-area: type1;
+}
+#happy {
+    grid-area: happy;
+}
+#excited {
+    grid-area: excited;
+}
+#laughing {
+    grid-area: laughing;
+}
+#confident {
+    grid-area: confident;
+}
+#love {
+    grid-area: love;
+}
+
+/* temporary css when solving */
+article p {
+    text-align: center;
+    display: inline;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+article {
+    text-align: center;
+}
+
+/* condition any article that have the class image */
+article img{
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    margin-top: 10px;
+    /* white-space: pre-wrap; */
+    word-wrap: break-word;
+}
+
+@media (max-width: 571px) {
+    main { 
+        grid-template-areas: "type1"
+                             "happy" 
+                             "excited" 
+                             "laughing" 
+                             "confident" 
+                             "love";
+    }
+}
