@@ -1,0 +1,46 @@
+Big O notation             	50hours
+data structure 
+sorting algortithm 
+searching algorithm 
+
+html/css...typography     	100hours
+tranversy, MDN or book...not too much youtube 
+build: atleast 5-10 single/multi page website
+
+git                  		10-20hours
+github                          youtube
+commandline                     git bash using unix shell/linux bash 
+version control 
+ssh/scp
+
+javascript			400hours
+MDN documentation/ Youtube / traversy media / book eloquent javascript 3rd edition
+github book "you don't know javacript" 
+todolist, modal, navbar hamburger, slides, gallery, side navbar, form logic
+ajax, promises, async await, es6+
+protypal inheritance, oop, pros and cons for each 
+pure function, functional programming, design patterns*
+constructor, module, protype, factory, observer, facade, adapter etc
+
+atleast 8-10 microproject
+leetcode 50-100 easy to intermediate        
+Webpack
+
+Nodejs 				100hours
+Express (nodejs framework)
+MongoDB/Sql   ....learn mongoDB
+runtime
+API, api vs rest api
+database mongo
+
+[framework]React 		100hours
+then learn redux
+
+12+ micro project
+1-2 large project
+100 algrorithmic challenges (leetcode)
+
+==================
+
+learn C or scheme
+learn gatsbyjs...serverless is the future

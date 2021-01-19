@@ -1,0 +1,104 @@
+npm init -y         //create a server folder 
+touch index.js .gitignore 
+
+packages: 
+express 			//framework to listen request from client, then response
+morgan middleware	//log incoming request 
+
+
+
+git init 
+npm install apollo-server graphql mongoose 
+npm i express morgan 
+
+document.querySeletor('css selector');
+getElementID
+getElementClass
+getElement
+
+node.js bring in other library by require('express')
+document is client side javascript
+vanilla js is js without library 
+node.js when you make modification from the server, then you have to kill the server then run it again 
+everytime 
+
+static file server (live-server) good for loading index.html and style.css and CDN as well
+dynamic server (node.js...which is JS)
+THE REASON WHY we have two server is because it speed up the speed of loading files 
+and when the user actually request/submit something, then it's good to use dynamic server 
+this way it distribute incoming request 
+
+method: 'POST'
+body: [your javascript var object that store your index.html ] //may need to convert to json using JSON.stringify([your javascript var...])
+headers: {'content-type': 'application/json'}
+
+validation to prevent injection 
+rendering type like using innerText or textContent rather using innerHTML to prevent xsite scripting 
+=======================================
+client side (port 80 or 8080)
+
+
+
+---------------------------------------
+server side (port 5000)
+create index.js 
+package.json write s script "start": "node index.js" to run in the terminal node start 
+require express module then create an instance of express() 
+
+to kill the server we do shift C in terminal or npm/bash 
+so to prevent having to kill the server and start again everytime, we use nodemon to do that for us 
+npm i --save-dev nodemon 
+then create a script "dev": "nodemon index.js"
+npm run dev 
+
+because client on origin 8080 does not have access on port 5000...we get CORS Error on DEV TOOLS
+no 'Access-Control-Allow-Origin' header is present on the requested resource 
+there are other way to fix this or work around...but if you have access to both server then 
+TO FIX THIS
+install cors package on the back end (or lament term: on the server folder)
+npm -i cors                    cors (express middleware)
+
+then bring cors module in the index.js 
+cons cors = require('cors'); 
+.use(cors());
+
+then we get underfine, even though the client are sending it successfully/post sending successfully 
+if so, it is because we need a middleware to parse incoming data 
+(lament term: server cannot process it)
+TO FIX 
+we use express build in 
+[your express instance javascript var]  .use(express.json());   //express json body parser 
+ 
+npm -i monk           (framework to talk to database)
+then require in the index.js, create a connection to the database passing where you want monk connect 
+collection 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
