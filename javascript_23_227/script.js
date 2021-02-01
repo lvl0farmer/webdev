@@ -84,4 +84,66 @@ raceResults('amy','tod', 'tina', 'trevor', 'travis')				//first parameter, secon
 //spread is collecting things into a single parameter 
 // ---------------------------------------------------
 
+// destructuring from array 
+const score = [123,564,7,45,22,31,11]
+const highScore = score[0]
+const lowScore = score[2]
+
+// but we can also do 
+const [high, low] = score; 										//high = 123, low = 7
+
+// we can also deconstruruing from object 
+const user = {
+	email: 'harvey@email.com', 
+	pass: 'sjfkdsjklf', 
+	firstname: 'fjdksajkfl', 
+	lastN: 'kjk',
+	born: '12314'
+}
+
+
+const email = user.email; 
+const born  = user.born; 
+// VS
+const {email, born } = user; 	
+// we can also rename var 
+const {email, born: birthYear} = user; 						
+// this is the same as 
+const birthYear = user.born; 
+// ---------------------------------------------------
+
+
+
+// destructuring params 
+function fullName(user)
+	return `${user.firstName} ${user.lastName}`
+// we can do 
+function fullName(user)
+	const {firstName, lastName} = user; 						//deconstruct user object once it is inside the function 
+	return `${firstName} ${lastName}`
+// but we can also deconstructure on the way in 
+function fullName({firstName, lastName})						//this function is expecting firstName and lastName 
+	return `${firstName} ${lastName}`
+// use it with addtional default value 
+function fullName({firstName, lastName = 'smith'})						
+	return `${firstName} ${lastName}`
+
+
+// so basically it comes down to 
+movies.filter((movie)) => movie.score >=90);
+// VS
+movies.filter({ score }) => score >= 90)
+
+// another example 
+
+movies.map(movie => {
+	return `${movie.title} (${movie.year}) is rated ${movie.score}`
+})
+
+VS
+ 
+movies.map(({title, socre, year}) => {				//still need parentices since it's a destructuring in a function call 
+	return `${title} (${year}) is rated ${score}`
+})
+
 
